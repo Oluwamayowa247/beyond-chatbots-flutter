@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // FOR THE TALK. Serves the app; open http://localhost:8080 in your
+      // normal Chrome so mic permission, flags and Gemini Nano are kept.
+      "name": "STAGE: serve for my Chrome (release)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "web-server",
+      "flutterMode": "release",
+      "args": ["--web-port", "8080", "--no-web-resources-cdn"]
+    },
+    {
+      // Same, but always uses the scripted Offline mode.
+      "name": "STAGE: serve for my Chrome (release, offline only)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "web-server",
+      "flutterMode": "release",
+      "args": ["--web-port", "8080", "--no-web-resources-cdn", "--dart-define=FORCE_DEMO=true"]
+    },
+    {
+      // For editing code: hot reload, opens a temporary Chrome profile.
+      "name": "DEV: Chrome (debug, hot reload)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "args": ["--web-port", "8080", "--no-web-resources-cdn"]
+    }
+  ]
+}
