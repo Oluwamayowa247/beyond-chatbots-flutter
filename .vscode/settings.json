@@ -1,0 +1,11 @@
+{
+  // C:\flutter is a junction to C:\Users\MAYOWA OLUTUYO\Flutter\flutter.
+  // Flutter's native-asset build hooks fail when the SDK path has a space.
+  "dart.flutterSdkPath": "C:\\flutter",
+  "dart.lineLength": 80,
+  "editor.formatOnSave": true,
+  "[dart]": {
+    "editor.rulers": [80],
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  }
+}
